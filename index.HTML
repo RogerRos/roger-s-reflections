@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>roger's reflections</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333333cc;
+        }
+
+        p {
+            font-style: italic;
+        }
+
+        .menu-button {
+            background-color: #333333cc;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <h1>ROGER'S REFLECTIONS</h1>
     <p>Hello! Here I will share my reflections.</p>
+
+    <!-- Boto -->
+    <button class="menu-button" onclick="toggleMenu()">Toggle Menu</button>
+
+    <!-- Menu -->
+    <div id="menu" style="display: none;">
+        <!-- contingut: -->
+        <p>Blog</p>
+        <p>Reflections</p>
+        <p>Home</p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
 </body>
 </html>
