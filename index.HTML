@@ -35,7 +35,7 @@
     <p>Hello! Here I will share my reflections.</p>
 
     <!-- Boto -->
-    <button class="menu-button" onclick="toggleMenu()">Toggle Menu</button>
+    <button class="menu-button" onclick="Menu()">Menu</button>
 
     <!-- Menu -->
     <div id="menu" style="display: none;">
@@ -46,10 +46,11 @@
     </div>
 
     <script>
-        function toggleMenu() {
+        function Menu() {
             var menu = document.getElementById('menu');
             menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
         }
     </script>
 </body>
 </html>
+
