@@ -40,7 +40,7 @@
     <!-- Menu -->
     <div id="menu" style="display: none;">
         <!-- contingut: -->
-        <p>Blog</p>
+        <p onclick="abrirBlog()">Blog</p>
         <p>Reflections</p>
         <p>Home</p>
     </div>
@@ -50,6 +50,11 @@
             var menu = document.getElementById('menu');
             menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
         }
+
+    function abrirBlog() {
+    window.location.href = 'blog.html';
+    }
+
     </script>
 </body>
 </html>
