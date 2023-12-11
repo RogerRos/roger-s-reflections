@@ -1,0 +1,90 @@
+<!--conte el menu-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>roger's reflections</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333333cc;
+            margin: 20px 0;
+        }
+
+        p {
+            font-style: italic;
+        }
+
+        .menu {
+            background-color: #2e2e2e;
+            padding: 1px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .menu-item {
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .menu-item img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li class="menu-item" onclick="gohome()">
+                <img src="C:\Users\roger\OneDrive\Escriptori\roger's reflections\pensadorderodin.png" alt="Home">
+            </li>
+            <li class="menu-item" onclick="goreflections()">|reflections</li>
+            <li class="menu-item" onclick="gointeresting()">|interesting to me</li>
+            <li class="menu-item" onclick="goringing()">|ringing in my head</li>
+        </ul>
+    </div>
+
+    <p>...</p>
+
+    <h1>Reflections:</h1>
+    <p>text about reflections:...</p>
+
+    <script>
+        function gohome() {
+            console.log("Go home");
+            window.location.href = 'index.HTML';
+        }
+
+        function goreflections() {
+            console.log("Go to reflections");
+            window.location.href = 'reflections.HTML';
+        }
+        
+        function gointeresting() {
+            console.log("Go to interesting to me");
+            window.location.href = 'interesting.HTML';
+        }
+        function goringing() {
+            console.log("Go to ringing in my head");
+            window.location.href = 'ringing.HTML';
+        }
+
+    </script>
+</body>
+</html>
