@@ -39,8 +39,8 @@
         }
 
         .menu-item img {
-            width: 45px;
-            height: 45px;
+            width: 20px;
+            height: 20px;
             vertical-align: middle;
             margin-right: 5px;
         }
@@ -51,9 +51,11 @@
     <div class="menu">
         <ul>
             <li class="menu-item" onclick="gohome()">
-                <img src="https://github.com/RogerRos/roger-s-reflections/blob/main/system%20images/home-image.png?raw=true" alt="Home">
+                <img src="C:\Users\roger\OneDrive\Escriptori\roger's reflections\pensadorderodin.png" alt="Home">
             </li>
-            <li class="menu-item" onclick="goreflections()">reflections</li>
+            <li class="menu-item" onclick="goreflections()">|reflections</li>
+            <li class="menu-item" onclick="gointeresting()">|interesting to me</li>
+            <li class="menu-item" onclick="goringing()">|ringing in my head</li>
         </ul>
     </div>
 
@@ -69,6 +71,16 @@
             console.log("Go to reflections");
             window.location.href = 'reflections.HTML';
         }
+        
+        function gointeresting() {
+            console.log("Go to interesting to me");
+            window.location.href = 'interesting.HTML';
+        }
+        function goringing() {
+            console.log("Go to ringing in my head");
+            window.location.href = 'ringing.HTML';
+        }
+
     </script>
 </body>
 </html>
