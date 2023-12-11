@@ -7,60 +7,68 @@
         body {
             text-align: center;
             font-family: Arial, sans-serif;
+            margin: 0;
         }
 
         h1 {
             font-size: 2em;
             font-weight: bold;
             color: #333333cc;
+            margin: 20px 0;
         }
 
         p {
             font-style: italic;
         }
 
-        .menu-button {
-            background-color: #333333cc;
-            color: #fff;
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
+        .menu {
+            background-color: #2e2e2e;
+            padding: 1px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
-        
-        #blog-link {
-            color: #333333cc;
+
+        .menu-item {
+            display: inline-block;
+            margin-right: 10px;
             cursor: pointer;
+            color: #ffffff;
+            font-weight: bold;
         }
-        
+
+        .menu-item img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
     </style>
 </head>
 <body>
-    <h1>ROGER'S REFLECTIONS</h1>
-    <p>Hello! Here I will share my reflections.</p>
-
-    <!-- Boto -->
-    <button class="menu-button" onclick="Menu()">Menu</button>
-
-    <!-- Menu -->
-    <div id="menu" style="display: none;">
-        <!-- contingut: -->
-        <p id="blog-link" onclick="abrirBlog()">Blog</p>
-        <p>Reflections</p>
-        <p>Home</p>
+    <div class="menu">
+        <ul>
+            <li class="menu-item" onclick="gohome()">
+                <img src="C:\Users\roger\OneDrive\Escriptori\roger's reflections\pensadorderodin.png" alt="Home">
+            </li>
+            <li class="menu-item" onclick="goreflections()">reflections</li>
+        </ul>
     </div>
 
+    <p>...</p>
+
     <script>
-        function Menu() {
-            var menu = document.getElementById('menu');
-            menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+        function gohome() {
+            console.log("Go home");
+            window.location.href = 'index.HTML';
         }
 
-    function abrirBlog() {
-    window.location.href = 'blog.html';
-    }
-
+        function goreflections() {
+            console.log("Go to reflections");
+            window.location.href = 'reflections.HTML';
+        }
     </script>
 </body>
 </html>
