@@ -39,8 +39,8 @@
         }
 
         .menu-item img {
-            width: 50px;
-            height: 50px;
+            width: 20px;
+            height: 20px;
             vertical-align: middle;
             margin-right: 5px;
         }
@@ -51,23 +51,26 @@
     <div class="menu">
         <ul>
             <li class="menu-item" onclick="gohome()">
-                <img src="https://github.com/RogerRos/roger-s-reflections/blob/main/system%20images/home-image.png?raw=true" alt="Home">
+                <img src="C:\Users\roger\OneDrive\Escriptori\roger's reflections\pensadorderodin.png" alt="Home">
             </li>
+            <li class="menu-item" onclick="gobriefcase()">|briefcase</li>
             <li class="menu-item" onclick="goreflections()">|reflections</li>
             <li class="menu-item" onclick="gointeresting()">|interesting to me</li>
             <li class="menu-item" onclick="goringing()">|ringing in my head</li>
         </ul>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
+    <p>...</p>
 
     <script>
         function gohome() {
             console.log("Go home");
             window.location.href = 'index.HTML';
+        }
+
+        function gobriefcase()) {
+            console.log("Go briefcase");
+            window.location.href = 'briefcase.HTML';
         }
 
         function goreflections() {
